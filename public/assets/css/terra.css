@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
+
 :root {
     --primary: #9D4931;
     --secondary: #BE734B;
@@ -49,32 +51,249 @@ a.btn:hover{
     border: 1px solid var(--hover);
 }
 .contenedor{
+    margin-top: 20px;
     padding: 15px;
 }
 .error{
     margin-top: 2px;
     color:var(--primary);
 }
+.card-p {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem;
+    background: #f8f3e8;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
 
+  .card-p > img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 600/300;
+  }
 
-#principal{
-    background: var(--primary);
-    color:var(--third);
-    width:100%;
-    min-width: 350px;
-    padding-top: 70px;
-    height: 784px;
+  .card-p > h2 {
+    margin-top: 1rem;
+    font-family: "Kalam", cursive;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #9d4931;
     text-align: center;
+  }
+
+  .card-p > p {
+
+    font-size: 1rem;
+    color: #80331ec0;
+    text-align: center;
+  }
+  @media (min-width: 709px) and (max-width: 1280px) {
+
+    .item-a {
+        order: 1;
+      }
+    .item-b {
+        order: 2;
+    }
+    .item-c {
+        order: 3;
+    }
+
+    #cards-p{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 11rem;
+        padding: 4rem;
+    }
+    #principal{
+        background-image: url('../img/indexLyA.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background: var(--primary); */
+        color:var(--third);
+        width:100%;
+        min-width: 350px;
+        padding-top: 70px;
+        height: 500px;
+        text-align: center;
+    }
+    #anfitriones{
+        margin:0  !important;
+        font-size: 4em !important ;
+        padding-top:60px;
+        word-spacing: 22pt;
+    }
+    .cuenta-div{
+        margin-top: 12%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (min-width: 1280px) {
+    #cards-p{
+        display: grid;
+        grid-template-columns: repeat(3, 24%);
+        gap: 11rem;
+        padding: 4rem;
+    }
+    #principal{
+        background-image: url('../img/indexLyA.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background: var(--primary); */
+        color:var(--third);
+        width:100%;
+        min-width: 350px;
+        padding-top: 70px;
+        height: 920px;
+        text-align: center;
+    }
+    #anfitriones{
+        margin:0  !important;
+        font-size: 4em !important ;
+        padding-top:200px;
+        word-spacing: 22pt;
+    }
+    .cuenta-div{
+        bottom: -70px;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (min-width: 440px) and (max-width: 551px) {
+    .item-a {
+        order: 1;
+      }
+    .item-b {
+        order: 2;
+    }
+    .item-c {
+        order: 3;
+    }
+
+    #cards-p{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 11rem;
+        padding: 4rem;
+    }
+    #principal {
+        background-image: url(../img/indexLyA.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background: var(--primary); */
+        color: var(--third);
+        width: 100%;
+        min-width: 350px;
+        padding-top: 15px;
+        height: 340px;
+        text-align: center;
+    }
+    #anfitriones{
+        margin:0  !important;
+        font-size: 400% !important ;
+        padding-top:31px;
+        word-spacing: 22pt;
+    }
+    .cuenta-div{
+        margin-top: 12%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (min-width: 551px) and (max-width: 708px) {
+    .item-a {
+        order: 1;
+      }
+    .item-b {
+        order: 2;
+    }
+    .item-c {
+        order: 3;
+    }
+
+    #cards-p{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 11rem;
+        padding: 4rem;
+    }
+    #principal {
+        background-image: url(../img/indexLyA.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background: var(--primary); */
+        color: var(--third);
+        width: 100%;
+        min-width: 350px;
+        padding-top: 15px;
+        height: 420px;
+        text-align: center;
+    }
+    #anfitriones{
+        margin:0  !important;
+        font-size: 450% !important ;
+        padding-top:31px;
+        word-spacing: 22pt;
+    }
+    .cuenta-div{
+        margin-top: 21%;
+        position: absolute;
+        width: 100%;
+    }
+}
+@media (max-width: 440px) {
+    .item-a {
+        order: 1;
+      }
+    .item-b {
+        order: 2;
+    }
+    .item-c {
+        order: 3;
+    }
+
+    #cards-p{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 11rem;
+        padding: 4rem;
+    }
+    #principal {
+        background-image: url(../img/indexLyA.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        /* background: var(--primary); */
+        color: var(--third);
+        width: 100%;
+        min-width: 350px;
+        padding-top: 15px;
+        height: 307px;
+        text-align: center;
+    }
+    #anfitriones{
+        margin:0  !important;
+        font-size: 331% !important ;
+        padding-top:31px;
+        word-spacing: 22pt;
+    }
+    .cuenta-div{
+        margin-top: 5%;
+        position: absolute;
+        width: 100%;
+    }
 }
 h1,h2,h3,h4,h5{
     font-family: 'Birthstone Bounce', cursive;
 }
-#anfitriones{
-    margin:0  !important;
-    font-size: 4em !important ;
-    padding-top:200px;
-    word-spacing: 22pt;
-}
+
 #evento{
     display: grid;
     text-align: center;
@@ -119,11 +338,7 @@ thead tr th {
     font-size:1.4rem;
     overflow-x: hidden;
 }
-.cuenta-div{
-    bottom: -70px;
-    position: absolute;
-    width: 100%;
-}
+
 .simply-section{
     background: var(--secondary);
     width: 33%;
