@@ -20,26 +20,24 @@
                 <div id="cuenta"></div>
             </div>
         </div>
-        <div class="contenedor">
-            <div class="reveal" id="padrinos">
-                    <h3>Padrinos</h3>
-                    <p>María Araceli Páramo Hernández</p>
-                    <hr/>
-                    <p>Roberto Ocampo García</p>
+        <div class="contenedor" id="cards-p">
+            <div class="card-p item-b" id="padrinos" style="transform:rotate(358deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+                <h3>Padres novia</h3>
+                <p>Dulce Maria Pérez Castro</p>
+                <hr/>
+                <p>Miguel Angel López Díaz</p>
             </div>
-            <div class="reveal" id="padres">
-                <div>
-                    <h3>Padres novia</h3>
-                    <p>Dulce Maria Pérez Castro</p>
-                    <hr/>
-                    <p>Miguel Angel López Díaz</p>
-                </div>
-                <div>
-                    <h3>Padres novio</h3>
-                    <p>Martha Rocio Yañez Nieto</p>
-                    <hr/>
-                    <p>José Baltazar Rodriguez Garcia</p>
-                </div>
+            <div class="card-p item-a"  id="padrinos" style="transform:rotate(2deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+                <h3>Padrinos</h3>
+                <p>María Araceli Páramo Hernández</p>
+                <hr/>
+                <p>Roberto Ocampo García</p>
+            </div>
+            <div class="card-p item-c" id="padrinos" style="transform:rotate(-3.312717379751713deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+                <h3>Padres novio</h3>
+                <p>Martha Rocio Yañez Nieto</p>
+                <hr/>
+                <p>José Baltazar Rodriguez Garcia</p>
             </div>
         </div>
         <div class="reveal carousel center-align">
