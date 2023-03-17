@@ -25,6 +25,7 @@ Route::get('/C&T/impresa', function () {return view('bodas.impresaCYT');});
 Route::get('/mesa',[Controller::class,'shearch'])->name('shearch');
 Route::post('/panel',[Controller::class,'panelAnfitrion'])->name('panel');
 Route::post('/pase',[Controller::class,'getPases'])->name('getPases');
+Route::post('/savePase',[Controller::class,'savePase'])->name('savePase');
 Route::post('/confirm',[Controller::class,'confirm'])->name('routeConfirm');
 
 Route::get('/love/{id}',[Controller::class,'giveMoreLove'])->name('moreLove');

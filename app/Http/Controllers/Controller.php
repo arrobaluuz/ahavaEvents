@@ -15,7 +15,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function shearch(Request $request){
-
         $consultar=mesas::where('codigo','=',strtoupper($request->codigo))->first();
         if(isset($consultar))
         {
@@ -44,6 +43,46 @@ class Controller extends BaseController
         }
 
     }
+    public function savePase(Request $request){
+        try {
+            $pase = Pase::where('code',$request->code)->first();
+            if($request->action == "add"){
+                if(isset($pase)){
+                    return response()->json([
+                        'status' => '0',
+                        'msg' => 'Ya existe un pase con este código',
+                    ]);
+                }else{
+                    Pase::create([
+                        'id_evento' => $request->idEvento,
+                        'code' => $request->code,
+                        'persona' => $request->persona,
+                        'mesa' => $request->mesa,
+                        'pases' => $request->pases,
+                        'confirm' => $request->confirm,
+                    ]);
+                }
+            }else{
+                $pase->persona = $request->persona;
+                $pase->mesa = $request->mesa;
+                $pase->pases = $request->pases;
+                $pase->confirm = $request->confirm;
+                $pase->save();
+            }
+            return response()->json([
+                'status' => '1',
+                'msg' => 'Guardado',
+            ]);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'status' => '0',
+                'msg' => $th,
+            ]);
+        }
+    }
+
+
+
     public function confirm(Request $request){
         try {
             $pase = Pase::where('code',$request->code)->first();
@@ -55,8 +94,12 @@ class Controller extends BaseController
         }
     }
     public function panelAnfitrion(Request $request){
-        return $request;
-        $pases = Pase::where('id_evento', $request->id)->get();
-        return view('panelAnfitrion',compact('pases'));
+        $evento = Evento::findOrFail($request->id);
+        if($evento->password == $request->password){
+            $pases = Pase::where('id_evento', $request->id)->get();
+            return view('panelAnfitrion',compact('pases','evento'));
+        }else{
+            return redirect()->back();
+        }
     }
 }

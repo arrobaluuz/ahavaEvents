@@ -27,5 +27,5 @@ class Pase extends Model
     /**
      * @var array
      */
-    protected $fillable = ['id_evento','code', 'nombre', 'pases', 'mesa', 'active', 'confirm'];
+    protected $fillable = ['id_evento','code', 'persona', 'pases', 'mesa', 'active', 'confirm'];
 }

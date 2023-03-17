@@ -146,8 +146,9 @@
         </div>
         <div class="actions">
             <form id="formGoPanel" action="{{ route('panel') }}" method="POST">
+                @csrf
                 <input type="hidden" name="id" value="2">
-                <input type="text" name="password">
+                <input type="password" name="password">
                 <a id="btnGoPanel" class="btn">Ir al panel de anfitrion</a>
             </form>
         </div>
