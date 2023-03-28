@@ -29,7 +29,6 @@
                 <p class="fecha" >29 de Abril del 2023</p>
                 <p class="faltan">Faltan</p>
                 <div id="cuenta"></div>
-
             </div>
         </div>
         <div id="peopleLove">
@@ -173,100 +172,6 @@
             <br>
             <h4>Queremos compartir contigo la felicidad de nuestra unión </h4>
             <br>
-            <a class="btn1 modal-trigger" href="#modal1">Ver lista de invitados</a>
-            <div id="modal1" class="modal modal-fixed-footer" >
-                <div class="modal-content">
-                    <div class="table">
-                        <table id="invitados">
-                            <thead>
-                                <tr>
-                                    <th width="60%"></th>
-                                    <th width="40%"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ana Martinez</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>Fernando Rivera</td>
-                                    <td>9</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="table" >
-                        <table id="header-fixed" style="position: fixed;top: 0px;display: none;background-color: #fafafa;">
-                            <thead style="font-weight: bold">
-                                <tr>
-                                    <th width="60%">Personas</th>
-                                    <th width="40%">Pases</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a id="ok" class="btn-1 modal-close btn-flat">OK</a>
-                </div>
-            </div>
         </div>
         <div class="ubicaciones">
             <div>
@@ -280,19 +185,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14948.192406092492!2d-100.82938519218747!3d20.504254300000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba6562967cc3%3A0x974d002c9a1e963c!2sCasa%20de%20jasso%20Salon%20De%20Fiesta!5e0!3m2!1ses-419!2sus!4v1675124591922!5m2!1ses-419!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
             </div>
         </div>
-        {{-- <div class="container">
-            <div class="cover">
-                <h2>Consulta tu mesa</h2>
-                <form action="{{route('shearch')}}" class="flex-form">
-                    @csrf
-                    <label for="from">
-                        <i class="ion-location"></i>
-                    </label>
-                    <input style="text-transform:uppercase;" class="codigo-input" type="text" name="codigo" placeholder="Ingresa tu código">
-                    <input type="submit" value="Buscar">
-                </form>
-            </div>
-        </div> --}}
+
         <div class="hastag">
             <p> Queremos que te la pases increible y poder recordar estos momentos en bellas fotos, usa el hastag</p>
             <h2>#CwT</h2>
@@ -323,29 +216,6 @@
                 $('#reaccionar').addClass('transitionOutFrameLove');
                 $('body').css({'overflow-y':'scroll'});
         });
-        $(document).ready(function(){
-                    $('.modal').modal({
-                        dismissible: false
-                    });
-
-                    var tableOffset = $("#invitados").offset().top;
-                    var $header = $("#invitados > thead").clone();
-
-                    $(window).bind("scroll", function() {
-                        var offset = $(this).scrollTop();
-
-                        if (offset >= tableOffset && $("#header-fixed").is(":hidden")) {
-                            $("#header-fixed").show();
-                        } else if (offset < tableOffset) {
-                            $("#header-fixed").hide();
-                        }
-                    });
-                });
-
-                $( "#ok" ).click(function() {
-                    $('#modal1').modal('close');
-                   $('body').css({'overflow-y':'scroll'});
-                });
     </script>
 @endpush
 

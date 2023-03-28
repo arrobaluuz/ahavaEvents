@@ -21,38 +21,71 @@
             </div>
         </div>
         <div class="contenedor" id="cards-p">
-            <div class="card-p item-b" id="padrinos" style="transform:rotate(358deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+            <div class="card-p item-b" id="padrinos" style="transform:rotate(358deg);">
+                <img src="{{ asset('assets/img/LYA/DYM.jfif') }}"/>
                 <h3>Padres novia</h3>
                 <p>Dulce Maria Pérez Castro</p>
-                <hr/>
+                <hr style="max-width: 100%;"/>
                 <p>Miguel Angel López Díaz</p>
             </div>
-            <div class="card-p item-a"  id="padrinos" style="transform:rotate(2deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+            <div class="card-p item-a"  id="padrinos" style="transform:rotate(2deg);">
+                <img src="{{ asset('assets/img/LYA/AYB.jfif') }}"/>
                 <h3>Padrinos</h3>
                 <p>María Araceli Páramo Hernández</p>
-                <hr/>
+                <hr style="max-width: 100%;"/>
                 <p>Roberto Ocampo García</p>
             </div>
-            <div class="card-p item-c" id="padrinos" style="transform:rotate(-3.312717379751713deg);"><img src="https://album.mediaset.es/eimg/10000/2020/07/21/clipping_118rjt_0e02.jpg"/>
+            <div class="card-p item-c" id="padrinos" style="transform:rotate(-3.312717379751713deg);">
+                <img src="{{ asset('assets/img/LYA/MYB.jfif') }}"/>
                 <h3>Padres novio</h3>
                 <p>Martha Rocio Yañez Nieto</p>
-                <hr/>
+                <hr style="max-width: 100%;"/>
                 <p>José Baltazar Rodriguez Garcia</p>
             </div>
         </div>
         <div class="reveal carousel center-align">
             <div class="carousel-item">
                 {{--  <h2>2007</h2> --}}
-                <img src="{{asset('assets/img/cecy/1.jfif')}}">
+                <img src="{{asset('assets/img/LYA/1.jpg')}}">
             </div>
             <div class="carousel-item">
-                {{--  <h2>Huasteca</h2> --}}
-                <img src="{{asset('assets/img/cecy/2.jfif')}}">
+                <img src="{{asset('assets/img/LYA/3.jpg')}}">
             </div>
             <div class="carousel-item">
-                {{--  <h2></h2> --}}
-                <img src="{{asset('assets/img/cecy/3.jfif')}}">
+                <img src="{{asset('assets/img/LYA/4.jpg')}}">
             </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/5.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/6.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/7.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/8.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/9.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/10.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/11.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/12.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/13.jpg')}}">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('assets/img/LYA/14.jpg')}}">
+            </div>
+
+
         </div>
         <div class="reveal" id="evento">
             <div id="ceremonia">
@@ -73,7 +106,7 @@
                     <i class="ion-location"></i>
                 </label>
                 <input id="routeGetPases" type="hidden" value="{{ route('getPases') }}">
-                <input id="code" style="text-transform:uppercase;" class="codigo-input" type="text" name="codigo" placeholder="Ingresa tu código" value="BDLYA0101">
+                <input id="code" style="text-transform:uppercase;" class="codigo-input" type="text" name="codigo" placeholder="Ingresa tu código">
                 <a id="searchCode" >Buscar</a>
             </div>
         </div>

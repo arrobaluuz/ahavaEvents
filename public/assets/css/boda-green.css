@@ -618,6 +618,10 @@ input{
     .headerdos img{
         width: 60%;
     }
+
+    #tr.i td{
+        padding:0 !important;
+    }
     .ubicaciones{
         width: auto;
         display: grid;

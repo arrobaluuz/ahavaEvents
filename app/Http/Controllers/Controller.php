@@ -81,8 +81,6 @@ class Controller extends BaseController
         }
     }
 
-
-
     public function confirm(Request $request){
         try {
             $pase = Pase::where('code',$request->code)->first();

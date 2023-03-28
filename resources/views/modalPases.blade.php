@@ -9,7 +9,7 @@
         <div id="confirmacion">
           <input id="confirm" type="number" min="0">
           <input id="routeConfirm" type="hidden" value="{{route('routeConfirm')}}">
-          <a id="btnConfirm" class="btn">Confirmar pases</a>
+          <a id="btnConfirm" class="btn" style="font-size: 12pt">Confirmar pases</a>
         </div>
         <p style="font-size: 11pt; margin-top:10px">Recuerda que tienes hasta el <span>15 de Octubre</span> para confirmar tus pases</p>
     </div>
