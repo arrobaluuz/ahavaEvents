@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('bodas.LYA');
 });
 
-Route::get('/LYA', function () {return view('bodas.bodaLYA');});
+Route::get('/LYA', function () {return view('bodas.LYA');});
 Route::get('/C&T', function () {return view('bodas.CYT');});
-Route::get('/C&T/impresa', function () {return view('bodas.impresaCYT');});
+Route::get('/MYL', function () {return view('bodas.MYL');});
 
 Route::get('/mesa',[Controller::class,'shearch'])->name('shearch');
 Route::post('/panel',[Controller::class,'panelAnfitrion'])->name('panel');
@@ -29,4 +29,3 @@ Route::post('/savePase',[Controller::class,'savePase'])->name('savePase');
 Route::post('/confirm',[Controller::class,'confirm'])->name('routeConfirm');
 
 Route::get('/love/{id}',[Controller::class,'giveMoreLove'])->name('moreLove');
-
